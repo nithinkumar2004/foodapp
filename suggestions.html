@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Suggestions - Tasty Bites</title>
+    <link rel="stylesheet" href="suggestion.css">
+    <link rel="stylesheet" href="suggest.js">
+</head>
+<body>
+    <header>
+        <h1>Customer Suggested Dishes</h1>
+    </header>
+
+    <section id="suggestion-form">
+        <h2>Suggest a Dish</h2>
+        <form id="suggestionForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="dish">Dish Name:</label>
+            <input type="text" id="dish" name="dish" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="submit">Submit Suggestion</button>
+        </form>
+    </section>
+
+    <section id="suggested-dishes">
+        <h2>Recently Suggested Dishes</h2>
+        <div id="dishesContainer">
+            <!-- Suggested dishes will be dynamically added here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tasty Bites. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
